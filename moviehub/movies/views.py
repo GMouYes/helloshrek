@@ -44,7 +44,6 @@ def index(request):
             page = request.GET.get('page')
             movies = paginator.get_page(page)
             return render(request,'main.html',{'movies':movies})
-            
     return render(request,'login.html')
 
 def rater(request):
@@ -61,7 +60,6 @@ def rater(request):
             movies = paginator.get_page(page)
             res={'rater':rater,'movies':movies}
         return render(request,'profile.html',res)
-
     return render(request,'login.html')
 
 def remove_year_name(movies):
