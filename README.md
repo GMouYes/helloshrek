@@ -31,7 +31,7 @@ to get  detail info about movies in the dataset mentioned above for better user 
 A preview of what's the data looks like is shown below<br/>
 
 <p align="center">
-  <img src="dataset0.jpg" height="200" width="400"><br/>
+  <img src="dataset0.jpg" height="200" width="400"/><br/>
   <h6 align="center">User Dataset</h6><br/>
 </p><br/>
 
