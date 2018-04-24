@@ -31,10 +31,17 @@ to get  detail info about movies in the dataset mentioned above for better user 
 A preview of what's the data looks like is shown below<br/>
 
 <p align="center">
-  <img src="dataset2.jpg" height="300"width="500"/>
+  <img src="dataset2.png" height="300"width="500"/>
+</p><br/>
+
+<p align="center">
   <img src="dataset0.jpg" height="300"width="500"/>
-  <img src="dataset1.jpg" height="300"width="500"/>
-</p>
+</p><br/>
+
+<p align="center">
+  <img src="dataset1.png" height="300"width="500"/>
+</p><br/>
+
 
 ![dataset example2](dataset2.png)
 ![dataset example0](dataset0.jpg)
