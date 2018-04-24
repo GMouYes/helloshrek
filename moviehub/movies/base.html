@@ -1,0 +1,190 @@
+<!Doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>{% block title %}Moviehub{% endblock %}</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/Bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+  		function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="{% static 'css/contactstyle.css' %}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{% static 'css/faqstyle.css' %}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{% static 'css/single.css' %}" type="text/css"/>
+
+  <link rel="stylesheet" href="{% static 'css/medile.css' %}" type="text/css" />
+  <!-- banner-slider -->
+  <link href="{% static 'css/jquery.slidey.min.css' %}" rel="stylesheet"/>
+  <!-- //banner-slider -->
+  <!-- pop-up -->
+  <link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <!-- //pop-up -->
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+  <!-- //font-awesome icons -->
+  <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+  <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css" media="all">
+  <script src="{% static 'js/owl.carousel.js' %}"></script>
+  <script>
+  	$(document).ready(function() {
+  		$("#owl-demo").owlCarousel({
+
+  		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+  		  items : 5,
+  		  itemsDesktop : [640,4],
+  		  itemsDesktopSmall : [414,3]
+
+  		});
+
+  	});
+  </script>
+  <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+  <script type="text/javascript">
+  	jQuery(document).ready(function($) {
+  		$(".scroll").click(function(event){
+  			event.preventDefault();
+  			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  		});
+  	});
+  </script>
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.ellipsis{
+ white-space:nowrap;
+ overflow:hidden;
+
+}
+.ellipsis:after{
+  content:'';
+}
+.blog-pagenat-wthree {
+    float: center;
+    margin-left: 10%;
+}
+.blog-pagenat-wthree ul li {
+    display: inline-block;
+    list-style: none;
+}
+.blog-pagenat-wthree ul li a {
+    display: block;
+    background: #fff;
+    padding: 8px 1.1em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    border: 1px solid #ddd;
+	    font-family: 'Roboto Condensed', sans-serif;
+}
+.blog-pagenat-wthree ul li a.frist,.blog-pagenat-wthree ul li a.last {
+    background: #000;
+	color:#fff;
+	 border: 1px solid #29292A;
+}
+.blog-pagenat-wthree ul li a:hover {
+    background: #29292A;
+    color: #fff;
+    border: 1px solid #29292A;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="">
+<nav class="navbar navbar-inverse " >
+  <div class="container-fluid" >
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'logged_in' %}">Moviehub</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="topNavBar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="{% url 'logged_in' %}">
+            <span class="glyphicon glyphicon-cd" area-hidden="true"></span>&nbsp;
+            Movies
+          </a>
+        </li>
+      </ul>
+
+    <form class="navbar-form navbar-right" action="{% url 'search' %}" method="post" role="search">
+      {% csrf_token %}
+      <div class="form-group">
+        <input type="text" class="form-control" name="search" placeholder="Search">
+        <button type="submit"
+        <i class="fa fa-search" style="padding:8px;font-size:14px"></i>
+        </button>
+      </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="">
+        <a href="{% url 'log_out' %}">
+          <span class="glyphicon glyphicon-off" area-hidden="true"></span>&nbsp;
+          Logout
+        </a>
+      </li>
+      <li class="">
+        <a href="{% url 'rater' %}">
+          <span class="glyphicon glyphicon-cd" area-hidden="true"></span>&nbsp;
+          Your Profile
+        </a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div>
+{% block body %}
+{% endblock %}
+</body>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% block script %}
+{% endblock %}
+</html>
