@@ -1,3 +1,5 @@
+<!Doctype html>
+<html>
 # MovieHub
 
 ### Website Demo
@@ -97,3 +99,4 @@ We used Python Django as backend to implement our project.
 ![pre4](demo4.png)
 ![pre5](demo5.png)
 ![pre6](demo6.png)
+</html>
