@@ -1,6 +1,3 @@
-<!Doctype html>
-<html>
-  
 # MovieHub
 
 ### Website Demo
@@ -34,7 +31,7 @@ to get  detail info about movies in the dataset mentioned above for better user 
 A preview of what's the data looks like is shown below<br/>
 
 <p align="center">
-  <img src="dataset0.jpg" height="200"width="400"/><br/>
+  <img src="dataset0.jpg" height="200" width="400"><br/>
   <h6 align="center">User Dataset</h6><br/>
 </p><br/>
 
@@ -100,4 +97,3 @@ We used Python Django as backend to implement our project.
 ![pre4](demo4.png)
 ![pre5](demo5.png)
 ![pre6](demo6.png)
-</html>
