@@ -69,9 +69,13 @@ Concepts are shown below as graphs:<br\>
 </p><br/>
 
 ### Evaluation
-We used Root Mean Squared Error (RMSE) for evaluation:
+We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 
-![RMSE](RMSE.png)
+<p align="center">
+  <img src="RMSE.png" height="100"width="250"/><br/>
+  <h6 align="center">RMSE Function</h6><br/>
+</p><br/>
+
 
 And the evaluation result is:
 
