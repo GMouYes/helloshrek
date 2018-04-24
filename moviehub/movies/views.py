@@ -44,6 +44,7 @@ def index(request):
             page = request.GET.get('page')
             movies = paginator.get_page(page)
             return render(request,'main.html',{'movies':movies})
+            
     return render(request,'login.html')
 
 def rater(request):
