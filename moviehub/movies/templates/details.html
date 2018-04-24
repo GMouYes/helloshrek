@@ -41,9 +41,6 @@
                     <h5><strong>Director</strong> : {{ movie.Director}}</h5>
                     <h5><strong>Casting</strong> : {{ movie.Actor }}</h5>
                     <h5><strong>Your Rating</strong> : {{ rating }}</h5>
-                    <h5><strong>Your comment:</strong></h5>
-                      <p>{{ comment }}</p>
-
 
                     <h5><strong>Plot:</strong></h5>
                     <p>{{ movie.Plot }}</p>
@@ -80,6 +77,7 @@
                                       <div style="height:178px" >
                                           <h3 class="ellipsis"> {{ movie.Name }}</h3>
                                           <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Year</span>: {{ movie.Year }}</h5>
+                                          <h5 class="ellipsis">&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Genre</span>: {{ movie.Genre }}</h5>
                                           <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size='5'><strong>{{movie.Imdb_rating}}</strong></font> / {{movie.rating_Count}}</h5>
                                           <a href="{% url 'Movies:detail' movie.id %}" class="btn btn-primary btn-lg" role="button">View Details</a>
                                           <a href="{% url 'Movies:watched' movie.id %}" class="btn btn-default btn-lg btn-favorite" role="button">

@@ -23,8 +23,9 @@
                    </a>
                  </div>
                       <div style="height:178px" >
-                          <h3 class="ellipsis"> {{ movie.Name }}</h3>
+                          <h3 class="ellipsis"><strong> {{ movie.Name }}</strong></h3>
                           <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Year</span>: {{ movie.Year }}</h5>
+                          <h5 class="ellipsis">&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Genre</span>: {{ movie.Genre }}</h5>
                           <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size='5'><strong>{{movie.Imdb_rating}}</strong></font> / {{movie.rating_Count}}</h5>
                           <a href="{% url 'Movies:detail' movie.id %}" class="btn btn-primary btn-lg" role="button">View Details</a>
                           <a href="{% url 'Movies:watched' movie.id %}" class="btn btn-default btn-lg btn-favorite" role="button">
@@ -38,8 +39,11 @@
           </div>
             {% endif %}
             {% endfor %}
+            {%else%}
+            <h1> Sorry, no result.Try reinput !</h1>
             {% endif %}
 </div>
+{%if movies %}
     <div class=" blog-pagenat-wthree">
         <ul>
             {% if movies.has_previous %}
@@ -54,5 +58,6 @@
             {% endif %}
         </ul>
     </div>
+  {% endif %}
 
 {% endblock %}

@@ -35,15 +35,16 @@
                     <div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
                         <a href="{% url 'Movies:detail' movie.id %}"class="hvr-shutter-out-horizontal">
                           {% if movie.Poster %}
-                           <img src="{{movie.Poster.url }}" class="img-responsive" style="height:400px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
+                           <img src="{{movie.Poster.url }}" class="img-responsive" style="height:350px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
                            {% else %}
-                           <img src="../static/img/no-poster.png" class="img-responsive" style="max-height:400px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
+                           <img src="../static/img/no-poster.png" class="img-responsive" style="max-height:350px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
                            {% endif %}
                        </a>
                      </div>
                           <div style="height:178px" >
                               <h3 class="ellipsis"> {{ movie.Name }}</h3>
                               <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Year</span>: {{ movie.Year }}</h5>
+                              <h5 class="ellipsis">&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Genre</span>: {{ movie.Genre }}</h5>
                               <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size='5'><strong>{{movie.Imdb_rating}}</strong></font> / {{movie.rating_Count}}</h5>
                               <a href="{% url 'Movies:detail' movie.id %}" class="btn btn-primary btn-lg" role="button">View Details</a>
                               <a href="{% url 'Movies:watched' movie.id %}" class="btn btn-default btn-lg btn-favorite" role="button">
