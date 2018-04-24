@@ -30,6 +30,12 @@ We have also crawled
 to get  detail info about movies in the dataset mentioned above for better user experience<br/>
 A preview of what's the data looks like is shown below<br/>
 
+<p align="center">
+  <img src="dataset2.jpg" height="300"width="500"/>
+  <img src="dataset0.jpg" height="300"width="500"/>
+  <img src="dataset1.jpg" height="300"width="500"/>
+</p>
+
 ![dataset example2](dataset2.png)
 ![dataset example0](dataset0.jpg)
 ![dataset example1](dataset1.png)
