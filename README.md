@@ -60,12 +60,12 @@ Concepts are shown below as graphs:<br\>
 
 <p align="center">
   <img src="cf1.png" height="200"width="600"/><br/>
-  <h6 align="center">Collaborative Filtering</h6><br/>
+  <h6 align="center">Item-Based Collaborative Filtering</h6><br/>
 </p><br/>
 
 <p align="center">
   <img src="cf2.png" height="200"width="600"/><br/>
-  <h6 align="center">Collaborative Filtering</h6><br/>
+  <h6 align="center">User-Based Collaborative Filtering</h6><br/>
 </p><br/>
 
 ### Evaluation
