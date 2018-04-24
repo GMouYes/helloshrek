@@ -45,11 +45,6 @@ A preview of what's the data looks like is shown below<br/>
   <h6 align="center">Rating Dataset</h6><br/>
 </p><br/>
 
-
-![dataset example2](dataset2.png)
-![dataset example0](dataset0.jpg)
-![dataset example1](dataset1.png)
-
 ### Algorithms
 We have implemented three recommend algorithms in this project:
   - User based collaborate filtering
@@ -58,9 +53,20 @@ We have implemented three recommend algorithms in this project:
 <br/>
 Concepts are shown below as graphs:<br\>
 
-![cf0](cf0.png)
-![cf1](cf1.png)
-![cf2](cf2.png)
+<p align="center">
+  <img src="cf0.png" height="200"width="600"/><br/>
+  <h6 align="center">Collaborative Filtering</h6><br/>
+</p><br/>
+
+<p align="center">
+  <img src="cf1.png" height="200"width="600"/><br/>
+  <h6 align="center">Collaborative Filtering</h6><br/>
+</p><br/>
+
+<p align="center">
+  <img src="cf2.png" height="200"width="600"/><br/>
+  <h6 align="center">Collaborative Filtering</h6><br/>
+</p><br/>
 
 ### Evaluation
 We used Root Mean Squared Error (RMSE) for evaluation:
