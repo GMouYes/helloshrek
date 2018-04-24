@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block title %}{{ movie.Name }}{% endblock %}
+{% block body %}
+{%load staticfiles%}
+<div class="container-fluid songs-container" style="height:80%;width:90%">
+  <div class="row">
+    <div class="col-md-3">
+          <a href="{% url 'Movies:detail' movie.id %}">
+            {% if movie.Poster %}
+             <img src="{{movie.Poster.url }}" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+             {% else %}
+             <img src="../static/img/no-poster.png" class="img-responsive" style="max-height:400px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
+             {% endif %}
+         </a>
+            <div style="height:178px" >
+                <h3 class="ellipsis"> {{ movie.Name }}</h3>
+                <h5><span style="font-weight:700;color:#136CB2">Year</span>: {{ movie.Year }}</h5>
+                <h5><span style="font-weight:700;color:#136CB2">Genre</span> : {{ movie.Genre }}</h5>
+                <h5><span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size='5'><strong>{{movie.Imdb_rating}}</strong></font> / {{movie.rating_Count}}</h5>
+            </div>
+        <!-- </div> -->
+    </div>
+        <!-- Right Song Info -->
+        <div class="col-sm-8 col-md-9">
+
+            <ul class="nav nav-pills" style="margin-bottom: 10px;">
+                <li role="presentation" class="active"><a href="{% url 'index' %}">Back</a></li>
+                <li role="presentation" class="active"><a href="{% url 'Movies:watched_stay' movie.id %}">
+                  {% if movie.Watched %}
+                  Mark Unwatched
+                  {% else %}
+                  Mark Watched
+                  {% endif %}
+                </a></li>
+
+            </ul>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Watched</strong> :{% if movie.Watched %}Yes{% else %}No{% endif %}</h5>
+                    <h5><strong>Director</strong> : {{ movie.Director}}</h5>
+                    <h5><strong>Casting</strong> : {{ movie.Actor }}</h5>
+                    <h5><strong>Your Rating</strong> : {{ rating }}</h5>
+                    <h5><strong>Your comment:</strong></h5>
+                      <p>{{ comment }}</p>
+
+
+                    <h5><strong>Plot:</strong></h5>
+                    <p>{{ movie.Plot }}</p>
+                    {% if movie.trailer %}
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embeded-responsive-item" src="{{movie.trailer}}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    {% else %}
+                    <div style="height:480px;width:854;background-color:white;">
+                      <div style="margin-top:30px">
+                      <img src="/static/img/no.gif"/>
+                    {% endif %}
+                      </div>
+                    </div>
+
+                    <h2>Similar Movies:</h2>
+                    {% if movies %}
+                      {% for movie in movies %}
+                      {% if forloop.counter|divisibleby:'3' or forloop.counter == 1 %}
+                      <div class="row">
+                        {% endif %}
+
+                              <div class="col-md-3">
+
+                                <div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+                                    <a href="{% url 'Movies:detail' movie.id %}"class="hvr-shutter-out-horizontal">
+                                      {% if movie.Poster %}
+                                       <img src="{{movie.Poster.url }}" class="img-responsive" style="height:400px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
+                                       {% else %}
+                                       <img src="../static/img/no-poster.png" class="img-responsive" style="max-height:400px;width:320px;border-top-left-radius:10px;border-top-right-radius:10px;">
+                                       {% endif %}
+                                   </a>
+                                </div>
+                                      <div style="height:178px" >
+                                          <h3 class="ellipsis"> {{ movie.Name }}</h3>
+                                          <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">Year</span>: {{ movie.Year }}</h5>
+                                          <h5>&nbsp&nbsp&nbsp&nbsp<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size='5'><strong>{{movie.Imdb_rating}}</strong></font> / {{movie.rating_Count}}</h5>
+                                          <a href="{% url 'Movies:detail' movie.id %}" class="btn btn-primary btn-lg" role="button">View Details</a>
+                                          <a href="{% url 'Movies:watched' movie.id %}" class="btn btn-default btn-lg btn-favorite" role="button">
+                                              <span class="glyphicon glyphicon-star{% if not movie.Watched %}-empty{% endif %}"></span>
+                                          </a>
+                                      </div>
+                              </div>
+                            {% if forloop.counter|divisibleby:'4' %}
+                          </div>
+                            {% endif %}
+                            {% endfor %}
+                            {% endif %}
+    </div>
+  <div class=" blog-pagenat-wthree">
+                      <ul>
+                          {% if movies.has_previous %}
+                              <li><a  href="?page=1">&laquo; first</a>
+                              <li><a href="?page={{  movies.previous_page_number }}">previous</a>
+                          {% endif %}
+                            <!-- <li><a href  Page {{  movies.number }} of {{  movies.paginator.num_pages }}. -->
+                              <li><a class="frist" href="?page={{movies.number}}">{{movies.number}}</a></li>
+                          {% if  movies.has_next %}
+                              <li><a href="?page={{ movies.next_page_number }}">{{movies.next_page_number}}</a>
+                          {%endif%}
+                          {% if  movies.has_next %}
+                              <li><a href="?page={{ movies.next_page_number }}">Next</a>
+                              <li><a href="?page={{ movies.paginator.num_pages }}">Last &raquo;</a></li>
+                          {% endif %}
+                      </ul>
+                    </div>
+
+              </div>
+
+</div>
+</div>
+
+
+{% endblock %}

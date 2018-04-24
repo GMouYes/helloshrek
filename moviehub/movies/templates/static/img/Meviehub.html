@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://localhost:8080/logged_in/?page=4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Meviehub</title>
+  <style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.ellipsis{
+ white-space:nowrap;
+ overflow:hidden;
+ font-weight:bold;
+}
+
+.ellipsis:after{
+  content:'';
+}
+.blog-pagenat-wthree {
+    float: center;
+    margin-left: 35%;
+}
+.blog-pagenat-wthree ul li {
+    display: inline-block;
+    list-style: none;
+}
+.blog-pagenat-wthree ul li a {
+    display: block;
+    background: #fff;
+    padding: 8px 1.1em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    border: 1px solid #ddd;
+	    font-family: 'Roboto Condensed', sans-serif;
+}
+.blog-pagenat-wthree ul li a.frist,.blog-pagenat-wthree ul li a.last {
+    background: #000;
+	color:#fff;
+	 border: 1px solid #29292A;
+}
+.blog-pagenat-wthree ul li a:hover {
+    background: #29292A;
+    color: #fff;
+    border: 1px solid #29292A;
+}
+</style>
+<link rel="stylesheet" href="./Meviehub_files/Bootstrap.min.css"><link rel="stylesheet" type="text/css" href="./Meviehub_files/style.css"><link rel="stylesheet" href="./Meviehub_files/font-awesome.min.css"></head>
+
+
+
+
+<!-- <link rel="stylesheet" href="/static/star-ratings/css/star-ratings.css"> -->
+
+<!-- <script type="text/javascript" src="/static/star-ratings/js/dist/star-ratings.min.js"></script> -->
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="">
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:8080/logged_in/">Moviehub</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="topNavBar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="http://localhost:8080/logged_in/">
+            <span class="glyphicon glyphicon-cd" area-hidden="true"></span>&nbsp;
+            Movies
+          </a>
+        </li>
+      </ul>
+
+    <form class="navbar-form navbar-right" action="http://localhost:8080/search/" method="post" role="search">
+      <input type="hidden" name="csrfmiddlewaretoken" value="cZFjI8cXbpilMjaeo1nGlVBMtrTYt2283uoNZ9wl8K7MKNi78DHdUuPN2nzNthht">
+      <div class="form-group">
+        <input type="text" class="form-control" name="search" placeholder="Search">
+      </div>
+      <button type="submit" <i="" class="fa fa-search" style="padding:8px;font-size:16px">
+      </button>
+
+    </form>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="">
+        <a href="http://localhost:8080/logged_out/">
+          <span class="glyphicon glyphicon-off" area-hidden="true"></span>&nbsp;
+          Logout
+        </a>
+      </li>
+      <li class="">
+        <a href="http://localhost:8080/home/">
+          <span class="glyphicon glyphicon-cd" area-hidden="true"></span>&nbsp;
+          Your Profile
+        </a>
+      </li>
+    </ul>
+
+
+    </div>
+  </div>
+</nav>
+</div>
+
+
+
+
+<div class="container-fluid" style="height:80%;width:80%">
+
+    <!-- Movies -->
+    
+        
+        
+    <div class="row">
+      
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/25/">
+                        
+                         <img src="./Meviehub_files/Leaving_Las_Vegas_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Leaving Las Vegas </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>7.6</strong></font> / 101559</h5>
+                            <a href="http://localhost:8080/movies/25/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/25/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/26/">
+                        
+                         <img src="./Meviehub_files/Othello_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Othello </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>6.9</strong></font> / 8176</h5>
+                            <a href="http://localhost:8080/movies/26/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/26/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/27/">
+                        
+                         <img src="./Meviehub_files/Now_and_Then_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Now and Then </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>6.8</strong></font> / 23186</h5>
+                            <a href="http://localhost:8080/movies/27/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/27/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+    <div class="row">
+      
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/28/">
+                        
+                         <img src="./Meviehub_files/Persuasion_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Persuasion </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>7.7</strong></font> / 9262</h5>
+                            <a href="http://localhost:8080/movies/28/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/28/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+            </div>
+              
+              
+        
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/29/">
+                        
+                         <img src="./Meviehub_files/City_of_Lost_Children,_The_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> City of Lost Children, The </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>7.6</strong></font> / 59566</h5>
+                            <a href="http://localhost:8080/movies/29/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/29/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/30/">
+                        
+                         <img src="./Meviehub_files/Shanghai_Triad__(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Shanghai Triad  </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>7.2</strong></font> / 4545</h5>
+                            <a href="http://localhost:8080/movies/30/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/30/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/31/">
+                        
+                         <img src="./Meviehub_files/Dangerous_Minds_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Dangerous Minds </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>6.4</strong></font> / 42104</h5>
+                            <a href="http://localhost:8080/movies/31/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/31/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+              
+        
+    <div class="row">
+      
+                <div class="col-md-3">
+                      <a href="http://localhost:8080/movies/32/">
+                        
+                         <img src="./Meviehub_files/Twelve_Monkeys_(1995).jpg" class="img-responsive" style="height:400px;width:100%;border-top-left-radius:10px;border-top-right-radius:10px;">
+                         
+                     </a>
+                        <div style="height:178px">
+                            <h3 class="ellipsis"> Twelve Monkeys </h3>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">Year</span>: 1995</h5>
+                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:700;color:#136CB2">IMDB Rating</span>: <font size="5"><strong>8.0</strong></font> / 518784</h5>
+                            <a href="http://localhost:8080/movies/32/" class="btn btn-primary btn-lg" role="button">View Details</a>
+                            <a href="http://localhost:8080/movies/32/watched/" class="btn btn-default btn-lg btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+              
+            </div>
+              
+              
+              
+
+    </div>
+    <div class=" blog-pagenat-wthree">
+        <ul>
+            
+                <li><a href="http://localhost:8080/logged_in/?page=1">« first</a>
+                </li><li><a href="http://localhost:8080/logged_in/?page=3">previous</a>
+            
+              <!-- <li><a href  Page 4 of 486. -->
+                </li><li><a class="frist" href="http://localhost:8080/logged_in/?page=4">4</a></li>
+            
+                <li><a href="http://localhost:8080/logged_in/?page=5">Next</a>
+                </li><li><a href="http://localhost:8080/logged_in/?page=486">Last »</a></li>
+            
+        </ul>
+    </div>
+
+
+
+<script src="./Meviehub_files/jquery.min.js.download"></script>
+<script src="./Meviehub_files/bootstrap.min.js.download"></script>
+
+
+
+</div></body></html>
