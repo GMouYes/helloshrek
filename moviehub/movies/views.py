@@ -60,6 +60,7 @@ def rater(request):
             movies = paginator.get_page(page)
             res={'rater':rater,'movies':movies}
         return render(request,'profile.html',res)
+        
     return render(request,'login.html')
 
 def remove_year_name(movies):
