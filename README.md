@@ -72,7 +72,7 @@ Concepts are shown below as graphs:<br\>
 We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 
 <p align="center">
-  <img src="RMSE.png" height="100"width="250"/><br/>
+  <img src="RMSE.png" height="80"width="250"/><br/>
   <h6 align="center">RMSE Function</h6><br/>
 </p><br/>
 
