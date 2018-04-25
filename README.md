@@ -36,12 +36,12 @@ A preview of what's the data looks like is shown below<br/>
 </p><br/>
 
 <p align="center">
-  <img src="dataset1.png" height="200"width="400"><br/>
+  <img src="dataset1.png" height="200" width="400"><br/>
   <h6 align="center">Movie Dataset</h6><br/>
 </p><br/>
 
 <p align="center">
-  <img src="dataset2.png" height="200"width="400"><br/>
+  <img src="dataset2.png" height="200" width="400"><br/>
   <h6 align="center">Rating Dataset</h6><br/>
 </p><br/>
 
