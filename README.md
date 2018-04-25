@@ -102,11 +102,41 @@ We used Python Django as backend to implement our project.
 3. App start up by: -- Python manage.py runserver 8080, Open in the browser 127.0.0.1:8080
 
 ### Website Preview
+<p align="center">
+  <img src="demo0.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
 
-![pre0](demo0.png)
-![pre1](demo1.png)
-![pre2](demo2.png)
-![pre3](demo3.png)
-![pre4](demo4.png)
-![pre5](demo5.png)
-![pre6](demo6.png)
+<p align="center">
+  <img src="demo1.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+
+<p align="center">
+  <img src="demo2.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+<p align="center">
+  <img src="demo3.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+
+<p align="center">
+  <img src="demo4.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+
+<p align="center">
+  <img src="demo5.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+
+<p align="center">
+  <img src="demo6.png" height="200" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
