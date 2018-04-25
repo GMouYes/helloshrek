@@ -103,40 +103,40 @@ We used Python Django as backend to implement our project.
 
 ### Website Preview
 <p align="center">
-  <img src="demo0.png" height="300" width="800"><br/>
+  <img src="demo0.png" height="350" width="800"><br/>
   <h6 align="center"></h6><br/>
 </p><br/>
 
 <p align="center">
-  <img src="demo1.png" height="300" width="800"><br/>
-  <h6 align="center"></h6><br/>
-</p><br/>
-
-
-<p align="center">
-  <img src="demo2.png" height="300" width="800"><br/>
-  <h6 align="center"></h6><br/>
-</p><br/>
-
-<p align="center">
-  <img src="demo3.png" height="300" width="800"><br/>
+  <img src="demo1.png" height="350" width="800"><br/>
   <h6 align="center"></h6><br/>
 </p><br/>
 
 
 <p align="center">
-  <img src="demo4.png" height="300" width="800"><br/>
+  <img src="demo2.png" height="350" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+<p align="center">
+  <img src="demo3.png" height="350" width="800"><br/>
   <h6 align="center"></h6><br/>
 </p><br/>
 
 
 <p align="center">
-  <img src="demo5.png" height="300" width="800"><br/>
+  <img src="demo4.png" height="350" width="800"><br/>
   <h6 align="center"></h6><br/>
 </p><br/>
 
 
 <p align="center">
-  <img src="demo6.png" height="300" width="800"><br/>
+  <img src="demo5.png" height="350" width="800"><br/>
+  <h6 align="center"></h6><br/>
+</p><br/>
+
+
+<p align="center">
+  <img src="demo6.png" height="350" width="800"><br/>
   <h6 align="center"></h6><br/>
 </p><br/>
