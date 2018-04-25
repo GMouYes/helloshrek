@@ -59,17 +59,17 @@ We have implemented three recommend algorithms in this project:
 Concepts are shown below as graphs:<br\>
 
 <p align="center">
-  <img src="cf0.png" height="200"width="600"/><br/>
+  <img src="cf0.png" height="200" width="600"><br/>
   <h6 align="center">Collaborative Filtering</h6><br/>
 </p><br/>
 
 <p align="center">
-  <img src="cf1.png" height="200"width="600"/><br/>
+  <img src="cf1.png" height="200" width="600"><br/>
   <h6 align="center">Item-Based Collaborative Filtering</h6><br/>
 </p><br/>
 
 <p align="center">
-  <img src="cf2.png" height="200"width="600"/><br/>
+  <img src="cf2.png" height="200" width="600"><br/>
   <h6 align="center">User-Based Collaborative Filtering</h6><br/>
 </p><br/>
 
@@ -77,7 +77,7 @@ Concepts are shown below as graphs:<br\>
 We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 
 <p align="center">
-  <img src="RMSE.png" height="80"width="250"/><br/>
+  <img src="RMSE.png" height="80" width="250"><br/>
   <h6 align="center">RMSE Function</h6><br/>
 </p><br/>
 
