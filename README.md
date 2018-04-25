@@ -83,9 +83,17 @@ We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 
 
 And the evaluation result is:
+<p align="center">
+  <img src="evaluation0.png" height="80" width="250"><br/>
+  <h6 align="center">Evaluation0</h6><br/>
+</p><br/>
 
-![ev0](evaluation0.png)
-![ev1](evaluation1.png)
+<p align="center">
+  <img src="evaluation1.png" height="80" width="250"><br/>
+  <h6 align="center">Evaluation1</h6><br/>
+</p><br/>
+
+
 
 ### DEMO Implement
 We used Python Django as backend to implement our project.
