@@ -4,7 +4,7 @@
 [Click HERE & Check Out Our DEMO](http://127.0.0.1:8080)
 
 ### What is MovieHub?
-MovieHub is a mobile-ready, offline-storage, JS powered HTML5 edited movie rating, data analysis and recommendation system :+1:
+MovieHub is a mobile-ready, offline-storage, JS powered HTML5 edited movie rating, data analysis and recommendation system
 
 ### What does MovieHub do?
 * Support wildcard search and display over 3,700 movies' details, including:
@@ -98,7 +98,7 @@ And the evaluation result is:
 ### DEMO Implement
 We used Python Django as backend to implement our project.
 1. Environment Setup: -- Windows 10, Python 3.6.4, mysql 5.7.21,mysql bench 6.3 CE
-2. Python Requirement Packages: -- Numpy ,pandas, imdbpie ,Imdbpy, sklearn
+2. Python Requirement Packages: -- Numpy, pandas, imdbpie, Imdbpy, sklearn
 3. App start up by: -- Python manage.py runserver 8080, Open in the browser 127.0.0.1:8080
 
 ### Website Preview
