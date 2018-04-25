@@ -126,7 +126,7 @@ We used Python Django as backend to implement our project.
 
 <p align="center">
   <img src="demo4.png" height="350" width="800"><br/>
-  <h6 align="center">Movie Recommend</h6><br/>
+  <h6 align="center">Movie Recommendation</h6><br/>
 </p><br/>
 
 
