@@ -21,11 +21,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
+    url(r'^$',views.index,name="index"),
     #movies/
     url(r'^movies/',include('movies.urls',namespace='Movies')),
-    url(r'^$',views.index,name="index"),
-    url(r'^ajax_list/$',views.ajax_list,name="ajax_list"),
+
     #register/
     url(r'^register/$',views.register,name="register"),
     #logged_in/
