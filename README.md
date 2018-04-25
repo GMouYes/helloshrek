@@ -85,15 +85,7 @@ We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 
 
 And the evaluation result is:
-<p align="center">
-  <img src="evaluation0.png" height="200" width="800"><br/>
-  <h6 align="center"></h6><br/>
-</p><br/>
 
-<p align="center">
-  <img src="evaluation1.png" height="200" width="800"><br/>
-  <h6 align="center"></h6><br/>
-</p><br/>
 
 
 
