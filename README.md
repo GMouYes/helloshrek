@@ -85,12 +85,12 @@ We used Root Mean Squared Error (RMSE) for evaluation:<br/>
 And the evaluation result is:
 <p align="center">
   <img src="evaluation0.png" height="200" width="800"><br/>
-  <h6 align="center">Evaluation0</h6><br/>
+  <h6 align="center"></h6><br/>
 </p><br/>
 
 <p align="center">
   <img src="evaluation1.png" height="200" width="800"><br/>
-  <h6 align="center">Evaluation1</h6><br/>
+  <h6 align="center"></h6><br/>
 </p><br/>
 
 
@@ -104,39 +104,39 @@ We used Python Django as backend to implement our project.
 ### Website Preview
 <p align="center">
   <img src="demo0.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Login Page</h6><br/>
 </p><br/>
 
 <p align="center">
   <img src="demo1.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Home Page</h6><br/>
 </p><br/>
 
 
 <p align="center">
   <img src="demo2.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Search</h6><br/>
 </p><br/>
 
 <p align="center">
   <img src="demo3.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Movie Detail</h6><br/>
 </p><br/>
 
 
 <p align="center">
   <img src="demo4.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Movie Recommend</h6><br/>
 </p><br/>
 
 
 <p align="center">
   <img src="demo5.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">User Profile</h6><br/>
 </p><br/>
 
 
 <p align="center">
   <img src="demo6.png" height="350" width="800"><br/>
-  <h6 align="center"></h6><br/>
+  <h6 align="center">Recommend Movie for User</h6><br/>
 </p><br/>
